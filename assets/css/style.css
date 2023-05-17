@@ -582,17 +582,7 @@ body {
     font-size: 4rem
   }
 
-  .app .btn {
-    padding: 20px 30px
-  }
 
-  .app-content .span {
-    font-size: 1.5rem
-  }
-
-  .app-content .strong {
-    font-size: 2rem
-  }
 }
 
 @media (min-width:992px) {
@@ -606,7 +596,7 @@ body {
     max-width: 960px
   }
 
-  :is(.service, .about, .app) .section-text {
+  :is(.service, .about) .section-text {
     max-width: 55ch;
     margin-inline: auto
   }
@@ -712,14 +702,6 @@ body {
     font-size: 2.2rem
   }
 
-  .app :is(.section-title, .section-text) {
-    text-align: center
-  }
-
-  .app .btn-group {
-    justify-content: center
-  }
-
   .support .container {
     display: grid;
     grid-template-columns: 1fr 0.5fr;
@@ -784,26 +766,51 @@ body {
     justify-content: flex-start
   }
 
-  .app .container {
-    display: grid;
-    grid-template-columns: 0.7fr 1fr;
-    align-items: center;
-    gap: 25px
-  }
+}
 
-  .app-content {
-    margin-block-end: 0
-  }
+.contentp {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: calc(100vh - 130px);
+  padding-bottom: 30px;
+  width: 100%;
+}
 
-  .app :is(.section-title, .section-text) {
-    text-align: left
-  }
+.txt-center {
+  text-align: center;
+  margin: 2em auto;
+}
 
-  .app .section-title {
-    --fs-2: 4rem
-  }
+.contentp h1 {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333333;
+}
 
-  .app .btn-group {
-    justify-content: flex-start
-  }
+.condition {
+  color: #000;
+  margin: 2.5em auto;
+  padding: 0 10px;
+  max-width: 800px;
+}
+
+.condition p {
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  color: #555555;
+}
+
+.condition a {
+  color: #8fb5ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  clear: both;
+}
+
+.condition a:hover {
+  color: #007bff;
+  text-decoration: underline;
 }
